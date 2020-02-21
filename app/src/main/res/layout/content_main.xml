@@ -25,7 +25,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/appbar_text"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/title_textColor"
                     style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
@@ -40,7 +40,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratregular"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
             android:text="@string/content_text"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/message_bg"
+            android:scaleType="centerCrop"/>
     </LinearLayout>
 
 </LinearLayout>
